@@ -9,7 +9,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     return render_template('login.html')
-
+    # return의 결과로 HTML파일을 받는다.
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
